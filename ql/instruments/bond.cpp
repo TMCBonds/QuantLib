@@ -58,7 +58,7 @@ namespace QuantLib {
             addRedemptionsToCashflows();
         }
 
-        registerWith(Settings::instance().evaluationDate());
+        //registerWith(Settings::instance().evaluationDate());
         for (Leg::const_iterator c = cashflows_.begin(); c != cashflows_.end();
              ++c)
             registerWith(*c);
@@ -101,7 +101,7 @@ namespace QuantLib {
             redemptions_.push_back(cashflows.back());
         }
 
-        registerWith(Settings::instance().evaluationDate());
+        //registerWith(Settings::instance().evaluationDate());
         for (Leg::const_iterator c = cashflows_.begin(); c != cashflows_.end();
              ++c)
             registerWith(*c);
